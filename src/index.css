@@ -49,12 +49,11 @@
 }
 
 .calculator-body {
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  padding: 20px;
+  display: block;  
+  border-radius:25px;
+  padding:30px 20px 20px;
   width: 100%;
-  background: darkorange;
+  background: rgb(255, 141, 1);
   transition: .6s ease;
 }
 
@@ -62,19 +61,21 @@
   width: 100%;
   max-width: 100%;
   height: 80px;
-  background: white;
+  background: #ea8407;
   position: relative;
   display: grid;
   justify-items: flex-end;
   align-items: center;
   align-content: center;
-  padding: 0px 0px;
+  padding: 0px 3px;
   border-radius: 15px;
+  border-right: 1px solid #ffb254;
+    border-bottom: 1px solid #ffb254;
 }
 
 .calculator-display span {
   font-size: 2rem;
-  color: black;
+  color: #fff;
   letter-spacing: 4px;
   margin: 0 5px;
   text-align: right;
@@ -108,13 +109,15 @@
   color: white;
   cursor: pointer;
   background: #2c2c2c;
-  border: 1px solid #2c2c2c;
+  border:none;
   border-radius: 15px;
   width: 100%;
   max-width: var(--max-width);
   height: 56px;
   --max-width: 60px;
   transition: 1s ease;
+  box-shadow: 5px 5px 4px #0004;
+  font-weight: 600;
 }
 
 .extra-btns-group span:not(.extra-btns-group span:last-child) {
@@ -141,15 +144,16 @@
   text-align: center;
   width:102px;
   height: var(--height-btn);
-  background: var(--bg-btn, white);
+  background: var(--bg-btn, #ffd5a0);
   align-content: center;
   border-radius: 15px;
-  border: 1px solid var(--color-border, white);
+  border: none;
   cursor: pointer;
   font-size: 1.2rem;
   transition: 1s ease;
-  --color-border: var(--color-text);
+  box-shadow:5px 5px 4px #0004;
   height: 56px;
+  font-weight: 600;
 }
 
 .number-btns-group span:hover {

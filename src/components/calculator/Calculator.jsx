@@ -4,7 +4,7 @@ import Display from "./Display";
 import { evaluate } from "mathjs";
 
 const Calculator = () => {
-  const [display, setDisplay] = useState("0");
+  const [display, setDisplay] = useState("");
 
   const isLastCharSign = /[+\=*/]/.test(display.toString().slice(-1));
   const hasNumberBefore = /\d/.test(display);
@@ -35,28 +35,30 @@ const Calculator = () => {
   };
   const handleExtrasClick = (action) => {
     switch (action) {
-      case "(": {
-        if (isLastCharSign && display === "0") {
-          setDisplay(display === "0" ? "(" : display + "");
+      case "C":
+        {
+          setDisplay("");
         }
         break;
-      }
-      case ")": {
-        const openCount = (display.match(/\(/g) || []).length;
-        const closeCount = (display.match(/\)/g) || []).length;
-        if (hasNumberBefore && openCount > closeCount) {
-          setDisplay(display + ")");
+      case "%":
+        {
+          if (isLastCharSign && hasNumberBefore) {
+            setDisplay(display, slice(0, -1) + action);
+          } else if (!isLastCharSign && hasNumberBefore) {
+            setDisplay(display + action);
+          }
         }
         break;
-      }
-      case ">": {
-        setDisplay(display.length > 1 ? display.slice(0, -1) : "0");
+      case ">":
+        {
+          setDisplay(display.length > 1 ? display.slice(0, -1) : "0");
+        }
         break;
-      }
-      case "AC": {
-        setDisplay("0");
+      case "AC":
+        {
+          setDisplay("0");
+        }
         break;
-      }
       default:
         break;
     }
