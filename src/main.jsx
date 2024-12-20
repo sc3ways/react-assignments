@@ -10,12 +10,12 @@ import Calculator from "./components/calculator/Calculator.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-assignment/",
     element: <App />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/assignments", element: <Assignments /> },
-      { path: "/calculator", element: <Calculator /> },
+      { path: "/react-assignment/", element: <Home /> },
+      { path: "/react-assignment/assignments", element: <Assignments /> },
+      { path: "/react-assignment/calculator", element: <Calculator /> },
     ],
   },
 ]);

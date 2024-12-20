@@ -14,7 +14,7 @@ const AssignmentCard = () => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <Link to="/calculator" className="btn btn-primary">
+          <Link to="/react-assignment/calculator" className="btn btn-primary">
             Go To Assignment
           </Link>
         </div>
