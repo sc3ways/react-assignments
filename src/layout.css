@@ -1,0 +1,109 @@
+h1,
+h1 a {
+  font-size: 3.529em;
+  line-height: 1.3em;
+}
+
+.color-white,
+.color-white h1,
+.color-white h2,
+.color-white h3,
+.color-white h4,
+.color-white h5,
+.color-white h6,
+.color-white a {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+}
+
+.btn-red:hover {
+  background-color: #191c2f;
+  border-color: #191c2f;
+  color: #fff;
+}
+
+.color-white-muted,
+.color-white-muted h1,
+.color-white-muted h2,
+.color-white-muted h3,
+.color-white-muted h4,
+.color-white-muted h5,
+.color-white-muted h6,
+.color-white-muted a {
+  color: rgba(255, 255, 255, .6);
+}
+
+.dtr-btn,
+.dtr-btn-flat,
+.dtr-text-btn,
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  -webkit-backface-visibility: hidden;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.btn-red {
+  background-color: #ff5858;
+  border-color: #ff5858;
+  color: #fff;
+}
+
+.dtr-btn,
+button,
+input[type="submit"],
+input[type="reset"],
+.dtr-form-btn,
+.dtr-logo,
+a:link,
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="search"],
+#dtr-header-global,
+.dtr-social a,
+.dtr-icon-list li,
+.dtr-sticky-tabs-nav,
+.dtr-servicebox,
+.dtr-servicebox-number {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.color-red {
+  color: #ff5858 !important;
+}

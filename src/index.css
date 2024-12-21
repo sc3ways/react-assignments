@@ -191,4 +191,40 @@
 .extra-btns-group span:hover {
   background: #181818;
 }
+.dtr-section {
+  position: relative;
+  background-image: url(images/white-shape-bg.png);
+}
+.dtr-section-with-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-blue {
+  background-color: #1732a4 !important;
+}
+.dtr-hero-section-top-padding {
+  padding-top: 70px;
+}
+.dtr-bottom-shape-img {
+  background-image: url(images/hero-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+}
+.dtr-mb-minus50 {
+  margin-bottom: -50px !important;
+}
+img {
+  max-width: 100%;
+}
+.dtr-rounded-img,
+.dtr-rounded-img img,
+.dtr-rounded {
+  border-radius: 10px;
+}
 
+.dtr-text-btn {
+  padding: 15px 0;
+  border: 0;
+}
