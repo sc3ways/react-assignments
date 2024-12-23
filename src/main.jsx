@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Assignments from "./routes/Assignments.jsx";
 import Home from "./routes/Home.jsx";
 import Calculator from "./components/calculator/Calculator.jsx";
+import TodoList from "./components/todolists/TodoList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "/react-assignment/", element: <Home /> },
       { path: "/react-assignment/assignments", element: <Assignments /> },
       { path: "/react-assignment/calculator", element: <Calculator /> },
+      { path: "/react-assignment/todolist", element: <TodoList /> },
     ],
   },
 ]);

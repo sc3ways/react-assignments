@@ -1,5 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
 import CarouselItem from "./CarouselItem";
+import { BiPhoneCall } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
@@ -22,7 +23,8 @@ const HeroSection = () => {
                 href="#contact"
                 className="dtr-btn btn-red dtr-scroll-link dtr-mt-30 dtr-mr-40"
               >
-                Book Now
+                <BiPhoneCall />
+                9416128288
               </a>
               {/* <a
                 className="dtr-video-popup dtr-text-btn dtr-btn-left-icon dtr-mt-30 color-red vbox-item"
