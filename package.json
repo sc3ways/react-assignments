@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdx-js/rollup": "^3.1.0",
     "bootstrap": "^5.3.3",
     "gh-pages": "^6.2.0",
     "mathjs": "^14.0.1",

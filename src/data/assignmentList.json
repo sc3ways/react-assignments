@@ -15,7 +15,7 @@
   },
   {
     "id": "003",
-    "img": "images/calculator.png",
+    "img": "images/form-vector.png",
     "title": "Form Submission",
     "text": "This is the process of a user filling out a form and sending the information to a web server for processing.",
     "url": "/react-assignment/react-forms"
