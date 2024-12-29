@@ -11,6 +11,7 @@ import Calculator from "./components/calculator/Calculator.jsx";
 import TodoList from "./components/todolists/TodoList.jsx";
 import FormsApp from "./components/form-submission/FormsApp.jsx";
 import ThemeSwitcherApp from "./components/theme-switcher/ThemeSwitcherApp.jsx";
+import MultiThemeSwitcherApp from "./components/multi-theme-switcher/MultiThemeSwitcherApp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/react-assignment/react-theme-swicher",
         element: <ThemeSwitcherApp />,
+      },
+      {
+        path: "/react-assignment/multi-theme-switcher",
+        element: <MultiThemeSwitcherApp />,
       },
     ],
   },

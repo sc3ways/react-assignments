@@ -26,5 +26,12 @@
     "title": "Theme Switcher",
     "text": "This pattern shows how to create a switch for website that allows changing between light and dark themes.",
     "url": "/react-assignment/react-theme-swicher"
+  },
+  {
+    "id": "005",
+    "img": "images/switcher.jpg",
+    "title": "Multi Theme Switcher",
+    "text": "The Theme Selector connector module enables developers to easily incorporate dark and light theme.",
+    "url": "/react-assignment/multi-theme-switcher"
   }
 ]
