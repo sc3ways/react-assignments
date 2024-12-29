@@ -1,0 +1,70 @@
+:root {
+  --body-bg-color: #ffddd2;
+  --wrapper-bg-color: #fff;
+  --wrapper-title-color: #023047;
+  /* dark blue*/
+  --wrapper-text-color: #111;
+  --wrapper-border-color: #999;
+  --wrapper-shadow-color: #999;
+  --switch-bg-color: #4b4b4b;
+  --switch-button-color: #fff;
+}
+
+[data-theme="dark"] {
+  --wrapper-bg-color: #111;
+  --wrapper-title-color: #ffb703;
+  /* dark yellow*/
+  --wrapper-text-color: #ddd;
+  --wrapper-border-color: #ddd;
+  --wrapper-shadow-color: #666;
+}
+
+
+
+.wrapper {
+  
+  width: 500px;
+  height: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: var(--wrapper-text-color);
+  background-color: var(--wrapper-bg-color);
+  border: solid 1px var(--wrapper-border-color);
+  box-shadow: 10px 10px 20px 0px var(--wrapper-shadow-color);
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+h1 {
+  color: var(--wrapper-title-color);
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.customSwitcher {
+  width: 60px;
+  height: 30px;
+  margin-left: auto;
+  background-color: var(--switch-bg-color);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.customSwitcher::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--switch-button-color);
+  transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+
+}
+
+.switherSection{background-color:var(--wrapper-border-color); height: 100vh; padding:40px 0;}
+
+[data-theme="dark"] .customSwitcher::before {
+  transform: translateX(30px);
+}

@@ -19,5 +19,12 @@
     "title": "Form Submission",
     "text": "This is the process of a user filling out a form and sending the information to a web server for processing.",
     "url": "/react-assignment/react-forms"
+  },
+  {
+    "id": "004",
+    "img": "images/switcher.jpg",
+    "title": "Theme Switcher",
+    "text": "This pattern shows how to create a switch for website that allows changing between light and dark themes.",
+    "url": "/react-assignment/react-theme-swicher"
   }
 ]
