@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-datepicker/dist/react-datepicker.css";
 import "./layout.css";
 import "./index.css";
 import App from "./App.jsx";
@@ -12,6 +13,7 @@ import TodoList from "./components/todolists/TodoList.jsx";
 import FormsApp from "./components/form-submission/FormsApp.jsx";
 import ThemeSwitcherApp from "./components/theme-switcher/ThemeSwitcherApp.jsx";
 import MultiThemeSwitcherApp from "./components/multi-theme-switcher/MultiThemeSwitcherApp.jsx";
+import TodoLocalStorageApp from "./components/localstorage-todos/TodoLocalStorageApp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/react-assignment/multi-theme-switcher",
         element: <MultiThemeSwitcherApp />,
+      },
+      {
+        path: "/react-assignment/todo-in-localstorage",
+        element: <TodoLocalStorageApp />,
       },
     ],
   },
