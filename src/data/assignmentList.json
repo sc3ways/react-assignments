@@ -40,5 +40,12 @@
     "title": "Todo From Local Storage",
     "text": "List everything that you have to do, with the most important tasks at the top, and the least important tasks at the bottom.",
     "url": "/react-assignment/todo-in-localstorage"
+  },
+  {
+    "id": "007",
+    "img": "images/wm.png",
+    "title": "Dynamic Countries Data",
+    "text": "There are 250 countries, including 193 UN members and 2 observer states-Holy See and Palestine.",
+    "url": "/react-assignment/dynamic-country-lists"
   }
 ]
