@@ -15,6 +15,7 @@ import ThemeSwitcherApp from "./components/theme-switcher/ThemeSwitcherApp.jsx";
 import MultiThemeSwitcherApp from "./components/multi-theme-switcher/MultiThemeSwitcherApp.jsx";
 import TodoLocalStorageApp from "./components/localstorage-todos/TodoLocalStorageApp.jsx";
 import CountryLists from "./components/country-lists/index.jsx";
+import CountryDetail from "./components/country-lists/CountryDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/react-assignment/dynamic-country-lists",
         element: <CountryLists />,
+      },
+      {
+        path: "/react-assignment/:country",
+        element: <CountryDetail />,
       },
     ],
   },

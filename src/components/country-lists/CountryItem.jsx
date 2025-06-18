@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
 function CountryItem({ country }) {
+  const countryName = country.name.common;
   return (
-    <Link to="" className="country-card card">
+    <Link to={`/react-assignment/${countryName}`} className="country-card card">
       <div className="card-img">
         <img src={country.flags.png} alt={country.name.common} />
       </div>
@@ -14,7 +15,7 @@ function CountryItem({ country }) {
         </p>
         <p>
           <strong>Capital: </strong>
-          {country.capital}
+          {country.capital?.join(", ")}
         </p>
         <p>
           <strong>Region: </strong>
