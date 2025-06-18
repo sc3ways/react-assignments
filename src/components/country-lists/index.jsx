@@ -11,7 +11,7 @@ function CountryLists() {
 
   useEffect(() => {
     fetch(
-      "https://restcountries.com/v3.1/all?fields=name,flags,population,capital,region,borders"
+      "https://restcountries.com/v3.1/all?fields=name,flags,population,capital,region,borders,languages,currencies,subregion"
     )
       .then((res) => res.json())
       .then((data) => {

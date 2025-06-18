@@ -2,9 +2,9 @@ function CountryListsShimmer() {
   return (
     <>
       <div className="country-shimmer-list row pt-4">
-        {Array.from({ length: 12 }).map((el) => {
+        {Array.from({ length: 12 }).map((el, index) => {
           return (
-            <div className="col-lg-3 py-3">
+            <div key={index + 1} className="col-lg-3 py-3">
               <div className="country-card card shimmer-card">
                 <div className="card-img"></div>
                 <div className="card-body">
