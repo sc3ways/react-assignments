@@ -19,32 +19,32 @@ import CountryDetail from "./components/country-lists/CountryDetail.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/react-assignment/",
+    path: "/",
     element: <App />,
     children: [
-      { path: "/react-assignment/", element: <Home /> },
-      { path: "/react-assignment/assignments", element: <Assignments /> },
-      { path: "/react-assignment/calculator", element: <Calculator /> },
-      { path: "/react-assignment/todolist", element: <TodoList /> },
-      { path: "/react-assignment/react-forms", element: <FormsApp /> },
+      { path: "/", element: <Home /> },
+      { path: "/assignments", element: <Assignments /> },
+      { path: "/assignments/calculator", element: <Calculator /> },
+      { path: "/assignments/todolist", element: <TodoList /> },
+      { path: "/assignments/react-forms", element: <FormsApp /> },
       {
-        path: "/react-assignment/react-theme-swicher",
+        path: "/assignments/react-theme-swicher",
         element: <ThemeSwitcherApp />,
       },
       {
-        path: "/react-assignment/multi-theme-switcher",
+        path: "/assignments/multi-theme-switcher",
         element: <MultiThemeSwitcherApp />,
       },
       {
-        path: "/react-assignment/todo-in-localstorage",
+        path: "/assignments/todo-in-localstorage",
         element: <TodoLocalStorageApp />,
       },
       {
-        path: "/react-assignment/dynamic-country-lists",
+        path: "/assignments/dynamic-country-lists",
         element: <CountryLists />,
       },
       {
-        path: "/react-assignment/:country",
+        path: "/assignments/:country",
         element: <CountryDetail />,
       },
     ],

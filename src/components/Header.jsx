@@ -19,7 +19,7 @@ const Header = () => {
 
             <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
               <li>
-                <Link to="/react-assignment/" className="nav-link text-white">
+                <Link to="/" className="nav-link text-white">
                   <i className="navbar-icon">
                     <IoHomeOutline />
                   </i>
@@ -27,10 +27,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/react-assignment/assignments"
-                  className="nav-link text-white"
-                >
+                <Link to="/assignments" className="nav-link text-white">
                   <i className="navbar-icon">
                     <MdOutlineAssignmentInd />
                   </i>
