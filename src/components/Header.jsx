@@ -14,7 +14,7 @@ const Header = () => {
               to="/react-assignment/"
               className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
-              <span className="brand-name">React Assignment</span>
+              <span className="brand-name">Assignment</span>
             </Link>
 
             <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
